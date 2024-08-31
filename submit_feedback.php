@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // You can store this data in a database or send it via email
     // For now, let's just send it to an email address
 
-    $to = "your-email@example.com"; // Replace with your email
+    $to = "vedantidlgave16@gmail.com"; // Replace with your email
     $subject = "New Feedback from $name";
     $body = "Name: $name\nEmail: $email\n\nMessage:\n$message";
     $headers = "From: $email";
