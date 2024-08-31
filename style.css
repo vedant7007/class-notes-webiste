@@ -1,31 +1,148 @@
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f093fb, #f5576c, #4facfe, #00f2fe);
+    background-size: 400% 400%;
     margin: 0;
     padding: 0;
+    color: #eeeeee;
+    line-height: 1.6;
+    animation: gradientAnimation 15s ease infinite;
 }
-header, footer {
-    background-color: #333;
-    color: #fff;
+
+/* Header */
+header {
+    background-color: rgba(34, 40, 49, 0.9);
+    color: #ffffff;
     text-align: center;
-    padding: 1em 0;
+    padding: 30px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom: 5px solid #f093fb;
 }
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #f093fb;
+}
+
+/* Main Content */
 main {
-    padding: 20px;
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: 30px auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
 }
+
+/* Notes Section */
+#notes h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #4facfe;
+    border-bottom: 3px solid #f093fb;
+    padding-bottom: 10px;
+}
+
 #notes-list {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
+
 #notes-list li {
-    background: #fff;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 15px 0;
+    padding: 15px 20px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+
+#notes-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+#notes-list li a {
+    color: #eeeeee;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+}
+
+#notes-list li a:hover {
+    text-decoration: underline;
+}
+
+/* Upload Section */
 #upload {
-    margin-top: 30px;
-    background: #fff;
-    padding: 20px;
-    border-radius: 5px;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: rgba(34, 40, 49, 0.8);
+    border-radius: 15px;
+    text-align: center;
+    border: 3px dashed #f093fb;
+}
+
+#upload h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #4facfe;
+}
+
+#file-input {
+    padding: 12px;
+    border: 2px solid #f093fb;
+    border-radius: 10px;
+    margin-right: 10px;
+    background-color: #ffffff;
+    color: #333;
+    transition: border 0.3s;
+}
+
+#file-input:focus {
+    border-color: #4facfe;
+    outline: none;
+}
+
+#upload-button {
+    background-color: #4facfe;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#upload-button:hover {
+    background-color: #2c7dfc;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(34, 40, 49, 0.9);
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+    border-radius: 0 0 15px 15px;
+    border-top: 5px solid #4facfe;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+/* Keyframes for Background Animation */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
