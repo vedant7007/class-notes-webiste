@@ -3,29 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Class Notes</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>CSE-B Class Notes</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/kTcU0Z0QH6j3I6+GdzEHpS/eu1e2eK9eJ7MxTwjGNYzVR31GDr4rF4wTh0RYdF0hCBpXAjdV3cIew==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
-        <h1>Class Notes</h1>
-    </header>
-    <main>
-        <section id="notes">
-            <h2>Available Notes</h2>
-            <ul id="notes-list">
-                <!-- Notes will be dynamically added here -->
+        <h1>CSE-B Class Notes</h1>
+        <nav>
+            <ul>
+                <li><a href="#description">About</a></li>
+                <li><a href="#notes">Notes</a></li>
+                <li><a href="#social">Connect</a></li>
+                <li><a href="#feedback">Feedback</a></li>
             </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Description Section -->
+        <section id="description" class="section">
+            <div class="container">
+                <h2>About This Site</h2>
+                <p>Welcome to CSE-B Class Notes! Here, you'll find notes from our classes, organized and regularly updated. Whether you're revising for exams or catching up on missed lectures. Stay connected, share your thoughts, and let's make learning a collaborative experience!</p>
+            </div>
         </section>
-        <section id="upload">
-            <h2>Upload New Note</h2>
-            <input type="file" id="file-input" accept=".pdf,.jpg,.png">
-            <button id="upload-button">Upload</button>
+
+        <!-- Notes Section -->
+        <section id="notes" class="section">
+            <div class="container">
+                <h2>Class Notes</h2>
+                <div class="notes-grid">
+                    <!-- Example Note Card -->
+                    <div class="note-card">
+                        <h3>Class Notes August 31, 2024</h3>
+                        <a href="notes/math_aug31.pdf" target="_blank" class="download-btn"><i class="fas fa-download"></i> Download</a>
+                    </div>
+                    <!-- Repeat similar blocks for other notes -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Links Section -->
+        <section id="social" class="section">
+            <div class="container">
+                <h2>Stay Connected</h2>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/your_instagram" target="_blank" class="social-link"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="https://wa.me/your_whatsapp_number" target="_blank" class="social-link"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feedback Form Section -->
+        <section id="feedback" class="section">
+            <div class="container">
+                <h2>Give Us Your Feedback</h2>
+                <form action="submit_feedback.php" method="post" class="feedback-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Feedback:</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Your feedback..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> Submit Feedback</button>
+                </form>
+            </div>
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2024 Vedant</p>
+        <p>&copy; 2024 Vedant's Class Notes. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
