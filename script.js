@@ -2,8 +2,9 @@ const notesList = document.getElementById('notes-list');
 
 // Example: Manually add links to your notes here
 const notes = [
-    { name: 'Math Notes - 2024-01-01', link: 'https://example.com/note1.pdf' },
-    { name: 'Physics Notes - 2024-01-02', link: 'https://example.com/note2.pdf' },
+    { name: 'Math Notes - 31-08-2024', link: 'https://drive.google.com/drive/folders/14CKS0bfDHXANqTISQyxP5ssKHvu-zJNC?usp=sharing' },
+    { name: 'Chemistry Notes - 31-08-2024', link: 'https://drive.google.com/drive/folders/14CKS0bfDHXANqTISQyxP5ssKHvu-zJNC?usp=sharing' },
+    { name : 'BEE Notes -  31-08-2024' , link: 'https://drive.google.com/drive/folders/14CKS0bfDHXANqTISQyxP5ssKHvu-zJNC?usp=sharing'},
 ];
 
 notes.forEach(note => {
