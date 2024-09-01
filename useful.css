@@ -1,0 +1,143 @@
+/* Global Styles */
+:root {
+    --primary-color: #ff6b6b;
+    --secondary-color: #48dbfb;
+    --accent-color: #1dd1a1;
+    --background-gradient: linear-gradient(135deg, #ff6b6b, #48dbfb, #feca57, #1dd1a1);
+    --font-primary: 'Poppins', sans-serif;
+    --font-secondary: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-primary);
+    background: var(--background-gradient);
+    background-size: 400% 400%;
+    animation: gradientAnimation 3s ease infinite;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: rgba(0, 0, 0, 0.7);
+    position: relative;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+    animation: slideInDown 1s ease;
+}
+
+header h1 {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2.8em;
+    font-weight: 700;
+    color: var(--accent-color);
+    letter-spacing: 2px;
+}
+
+nav {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 8px 15px;
+    transition: background 0.4s, color 0.4s;
+    border-radius: 25px;
+}
+
+nav ul li a:hover {
+    background: var(--accent-color);
+    color: #000;
+}
+
+/* Main Content */
+main {
+    padding-top: 20px; /* To offset the fixed header */
+}
+
+/* Section Styles */
+.section {
+    padding: 80px 20px;
+    animation: fadeInUp 1s ease;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Useful Links Section */
+#useful-links {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 60px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+#useful-links h2 {
+    font-size: 2.8em;
+    margin-bottom: 30px;
+    color: var(--secondary-color);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.link-card {
+    display: block;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background 0.4s, transform 0.4s;
+}
+
+.link-card:hover {
+    background: var(--accent-color);
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 25px 0;
+    color: #ddd;
+    font-size: 1em;
+    position: relative;
+}
+
+/* Keyframes for Animations */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
