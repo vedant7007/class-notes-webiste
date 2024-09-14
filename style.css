@@ -1,4 +1,4 @@
-/* Global Styles */
+
 :root {
     --primary-color: #ff6b6b;
     --secondary-color: #48dbfb;
@@ -23,7 +23,6 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
 header {
     background: rgba(0, 0, 0, 0.7);
     position: relative;
@@ -43,11 +42,10 @@ header h1 {
     letter-spacing: 2px;
 }
 
-/* Heading Styles */
 h1, h2, h3 {
-    background: rgba(0, 0, 0, 0.8); /* Darker background for contrast */
-    border: 2px solid var(--accent-color); /* Accent color border */
-    padding: 15px 20px; /* Padding inside the box */
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid var(--accent-color);
+    padding: 15px 20px;
     border-radius: 10px; /* Rounded corners */
     text-align: center; /* Centered text */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
